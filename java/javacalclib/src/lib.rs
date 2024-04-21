@@ -36,6 +36,9 @@ impl Calc {
     }
 }
 
+/// # Safety
+///
+/// This function creates a new instance.
 #[no_mangle]
 pub unsafe extern "system" fn Java_JavaCalcTest_calcNew(_env: JNIEnv, _class: JClass) -> jlong {
     let calc = Calc::new();
@@ -43,6 +46,9 @@ pub unsafe extern "system" fn Java_JavaCalcTest_calcNew(_env: JNIEnv, _class: JC
     Box::into_raw(Box::new(calc)) as jlong
 }
 
+/// # Safety
+///
+/// This function adds a value.
 #[no_mangle]
 pub unsafe extern "system" fn Java_JavaCalcTest_calcAdd(
     // Notice that this `env` argument is mutable. Any `JNIEnv` API that may
@@ -60,6 +66,9 @@ pub unsafe extern "system" fn Java_JavaCalcTest_calcAdd(
     calc.add(value)
 }
 
+/// # Safety
+///
+/// This function subtracts a value.
 #[no_mangle]
 pub unsafe extern "system" fn Java_JavaCalcTest_calcSub(
     mut _env: JNIEnv,
@@ -72,6 +81,9 @@ pub unsafe extern "system" fn Java_JavaCalcTest_calcSub(
     calc.sub(value);
 }
 
+/// # Safety
+///
+/// This function returns the current result.
 #[no_mangle]
 pub unsafe extern "system" fn Java_JavaCalcTest_calcResult(
     mut _env: JNIEnv,
@@ -83,6 +95,9 @@ pub unsafe extern "system" fn Java_JavaCalcTest_calcResult(
     calc.result()
 }
 
+/// # Safety
+///
+/// This function destroys an instance.
 #[no_mangle]
 pub unsafe extern "system" fn Java_JavaCalcTest_calcDestroy(
     _env: JNIEnv,

@@ -26,3 +26,9 @@ impl Calc {
         self.instance.result()
     }
 }
+
+impl Default for Calc {
+    fn default() -> Self {
+        Self::new()
+    }
+}

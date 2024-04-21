@@ -75,6 +75,7 @@ if __name__ == "__main__":
     if "--versions" in sys.argv:
         versions = sys.argv[sys.argv.index("--versions") + 1].split(",")
     else:
+        # By default choose current interpreter version
         versions = [sys.version.split()[0]]
     if versions == ["*"]:
         pyenv_versions = Run(["pyenv", "versions"])
