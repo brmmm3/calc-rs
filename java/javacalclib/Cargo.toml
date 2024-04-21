@@ -1,0 +1,12 @@
+[package]
+name = "javacalclib"
+version = "0.1.0"
+authors = ["Martin Bammer <mrbm74@gmail.com>"]
+edition = "2021"
+
+[dependencies]
+jni = "0.21"
+calclib = { "path" = "../../calclib" }
+
+[lib]
+crate_type = ["cdylib"]

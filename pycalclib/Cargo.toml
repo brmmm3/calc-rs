@@ -1,0 +1,31 @@
+[package]
+name = "pycalclib_rs"
+version = "0.1.0"
+authors = ["Martin Bammer <mrbm74@gmail.com>"]
+description = "A simple example"
+edition = "2021"
+license = "MIT"
+#repository = "https://github.com/brmmm3/scandir-rs"
+#homepage = "https://github.com/brmmm3/scandir-rs"
+readme = "README.md"
+keywords = ["simple"]
+include = [
+    "Cargo.toml",
+    "pyproject.toml",
+    "src/*",
+    "test/*.py",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE",
+]
+
+[lib]
+name = "pycalclib_rs"
+crate-type = ["cdylib"]
+
+[dependencies]
+calclib = { path = "../calclib", version = "0.1.0" }
+
+[dependencies.pyo3]
+version = "0.21"
+features = ["extension-module"]
