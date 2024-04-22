@@ -76,7 +76,7 @@ jobs:
 
       - uses: PyO3/maturin-action@v1
         with:
-          working-directory: ./pyscandir
+          working-directory: ./pycalclib
           command: build
           args: --release
 
@@ -94,7 +94,7 @@ jobs:
 
       - name: Build wheels
         run: |
-          cd pyscandir
+          cd pycalclib
           maturin build --sdist --interpreter
           python -m cibuildwheel --output-dir wheelhouse
 
