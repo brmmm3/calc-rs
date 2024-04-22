@@ -7,12 +7,12 @@ The example [calcclient.py](https://github.com/brmmm3/calc-rs/blob/master/calcse
 
 To run the server in `debug` mode just call
 
-```rust
+```sh
 cargo run --bin calcserver
 ```
 
 To run the server in `release` mode just call
 
-```rust
+```sh
 cargo run --release --bin calcserver
 ```
