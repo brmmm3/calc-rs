@@ -7,3 +7,6 @@ When using the `--versions` option you can provide:
 
 - a comma separated list of Python versions
 - `*` to build Python modules for all versions installed by `pyenv`. Put it in quotation marks to avoid unexpected behavior.
+
+**Note:**
+As of now [manylinux](https://github.com/pypa/manylinux) wheels are failing to build with `cibuildwheel`, because the spec for libc 2.34 is still not released.

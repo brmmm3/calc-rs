@@ -40,3 +40,12 @@ Rust is a very versatile power horse. It is easy to use Rust in most used progra
 My preferred combination is Python and Rust. If the application has a UI I usually use Qt. For very simple UIs [FLTK](https://fltk-rs.github.io/fltk-rs) is preferred for smaller executables and easier license handling. In Rust I implement the performance and security critical parts. The rest in Python for reduced development costs.
 
 If speed and / or security matters I would really recommend using Rust. The power features of Rust helps you reducing bugs and follow up costs.
+
+## License
+
+Licensed under either of
+
+* Apache License, Version 2.0, ([LICENSE-APACHE](LICENSE-APACHE) or http://www.apache.org/licenses/LICENSE-2.0)
+* MIT license ([LICENSE-MIT](LICENSE-MIT) or http://opensource.org/licenses/MIT)
+
+at your option.

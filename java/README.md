@@ -1,6 +1,6 @@
 # `javacalclib`
 
-This is the Java layer for [calclib](https://github.com/brmmm3/calc-rs/tree/master/calclib). This package is for creating a Java extensions class using [jni](https://github.com/jni-rs/jni-rs).
+This is the Java layer for [calclib](https://github.com/brmmm3/calc-rs/tree/master/calclib). This package is for creating a Java extension class using [jni](https://github.com/jni-rs/jni-rs).
 
 Follow the guide to create a Java extension [here](https://docs.rs/jni/latest/jni).
 
