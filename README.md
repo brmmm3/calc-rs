@@ -12,6 +12,16 @@ The project is a workspace containing the following packages:
 
 ## Recommendations
 
+For learning Rust you should read this [book](https://doc.rust-lang.org/stable/book).
+You REALLY should read this book before you start coding, because Rust is not easy to learn. Especially to understand and solve the findings of the Rust compiler can drive you crazy. But in the end, after solving all the findings you'll understand that the compiler was absolutely right and it saved you a lot of future work finding and fixing the bugs by yourself.
+
+For testing simple code examples online, without installing Rust locally, you can use the [Rust playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021).
+
+If you've issues you can't fix then it is a good idea to ask in the [user forum](https://users.rust-lang.org). My experience is that you'll get useful help within a short time.
+When asking questions you can use the playground to paste a short (working) example, which describes your problem.
+
+And last but not least at [This Week in Rust](https://this-week-in-rust.org) you'll find interesting news and projects.
+
 ### IDE
 
 For programming Rust the best IDE is VS Code with the following plugins:
