@@ -12,36 +12,14 @@ use jni::objects::JClass;
 
 use jni::sys::jlong;
 
-struct Calc {
-    instance: calclib::Calc,
-}
-
-impl Calc {
-    pub fn new() -> Self {
-        Self {
-            instance: calclib::Calc::new(0.0),
-        }
-    }
-
-    pub fn add(&mut self, value: c_double) -> f64 {
-        self.instance.add(value)
-    }
-
-    pub fn sub(&mut self, value: c_double) -> f64 {
-        self.instance.sub(value)
-    }
-
-    pub fn result(&self) -> f64 {
-        self.instance.result()
-    }
-}
+use calclib::Calc;
 
 /// # Safety
 ///
 /// This function creates a new instance.
 #[no_mangle]
 pub unsafe extern "system" fn Java_JavaCalcTest_calcNew(_env: JNIEnv, _class: JClass) -> jlong {
-    let calc = Calc::new();
+    let calc = Calc::new(0.0);
 
     Box::into_raw(Box::new(calc)) as jlong
 }
